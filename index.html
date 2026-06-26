@@ -15,6 +15,7 @@
 </head>
 <body class="bg-[#0f1622] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900">
 
+    <!-- BARRE DE NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 bg-[#0f1622]/90 backdrop-blur-md z-50 border-b border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="text-2xl font-bold tracking-wide text-white flex items-center gap-1">
@@ -24,25 +25,42 @@
             <div class="hidden md:flex items-center space-x-10 text-sm font-medium text-slate-400">
                 <a href="#accueil" class="text-cyan-400 border-b-2 border-cyan-400 pb-1">Accueil</a>
                 <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#competences" class="hover:text-white transition">Portfolios</a>
                 <a href="#projets" class="hover:text-white transition">Projets</a>
                 <a href="#contact" class="hover:text-white transition">Contact</a>
             </div>
         </div>
     </nav>
 
+    <!-- CONTENU PRINCIPAL -->
     <main class="max-w-7xl mx-auto px-6 pt-32 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
+        <!-- COLONNE GAUCHE : INFOS & PHOTO -->
         <div class="lg:col-span-5 flex flex-col space-y-16">
             
             <div id="accueil" class="space-y-6">
                 <h1 class="text-5xl font-extrabold tracking-tight text-white">Gloire Ilunga</h1>
                 <h2 class="text-3xl font-bold text-cyan-400">Développeur Logiciel</h2>
                 <p class="text-slate-400 text-base leading-relaxed max-w-md">
-                    Gloire Ilunga est le développeur principal et architecte logiciel chez <span class="text-cyan-400">&lt;i-dea /&gt;</span>. Passionné par l’architecture logicielle, le développement backend robuste, la gestion de bases de données et la création de solutions d’automatisation intelligentes pour nos clients.
+                    Développeur principal et architecte logiciel chez <span class="text-cyan-400">&lt;i-dea /&gt;</span>. Passionné par l’architecture logicielle, le développement backend robuste, la gestion de bases de données et la création de solutions d’automatisation intelligentes.
                 </p>
+                <!-- LIENS SOCIAUX RAPIDES -->
+                <div class="flex items-center space-x-5 pt-2">
+                    <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white text-xl transition" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-slate-400 hover:text-cyan-400 text-xl transition" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/243981740414?text=Bonjour%20Gloire,%20j'ai%20vu%20ton%20portfolio%20et%20j'aimerais%20discuter%20d'un%20projet." target="_blank" class="text-slate-400 hover:text-emerald-400 text-xl transition" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:igloire243@gmail.com" class="text-slate-400 hover:text-cyan-400 text-xl transition" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
 
+            <!-- ENCADREMENT PHOTO PROFILE OCTOGONAL -->
             <div class="flex justify-center lg:justify-start items-center pt-4">
                 <div class="relative w-80 h-80 flex items-center justify-center">
                     <div class="absolute inset-0 bg-cyan-400/20 octagon-clip blur-xl scale-105"></div>
@@ -51,13 +69,14 @@
                             <img src="https://images2.imgbox.com/fa/28/H0vGid3a_o.png" alt="Gloire Ilunga" class="w-full h-full object-cover object-top octagon-clip bg-slate-800" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="hidden absolute inset-0 flex-col items-center justify-center text-center text-xs text-slate-500 px-4">
                                 <i class="fas fa-user text-4xl text-cyan-400/40 mb-2"></i>
-                                <span>Place ta photo nommée <strong class="text-cyan-400">photo-profil.jpg</strong> ici</span>
+                                <span>Photo de Profil</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- STACK TECHNIQUE -->
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-white tracking-wide">Mon Stack Technique</h3>
                 <div class="grid grid-cols-3 gap-4">
@@ -90,6 +109,7 @@
 
         </div>
 
+        <!-- COLONNE DROITE : OUTILS & PROJETS -->
         <div class="lg:col-span-7 flex flex-col space-y-16">
             
             <div id="about" class="space-y-6">
@@ -122,10 +142,12 @@
                 </div>
             </div>
 
+            <!-- SECTION PROJETS RECENT -->
             <div id="projets" class="space-y-6">
                 <h3 class="text-xl font-bold text-white tracking-wide">Projets Récents</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     
+                    <!-- PROJET 1 -->
                     <div class="bg-[#131c2e] border border-slate-800/80 rounded-xl overflow-hidden flex flex-col h-full hover:border-cyan-500/40 transition duration-300">
                         <div class="h-36 bg-[#0a0f18] border-b border-slate-800/60 p-3 font-mono text-[10px] text-cyan-500/60 overflow-hidden select-none">
                             // UNILU Management System<br>
@@ -144,6 +166,7 @@
                         </div>
                     </div>
 
+                    <!-- PROJET 2 -->
                     <div class="bg-[#131c2e] border border-slate-800/80 rounded-xl overflow-hidden flex flex-col h-full hover:border-cyan-500/40 transition duration-300">
                         <div class="h-36 bg-[#0a0f18] border-b border-slate-800/60 p-3 font-mono text-[10px] text-slate-600 overflow-hidden select-none">
                             // E-Library Module<br>
@@ -161,6 +184,7 @@
                         </div>
                     </div>
 
+                    <!-- PROJET 3 -->
                     <div class="bg-[#131c2e] border border-slate-800/80 rounded-xl overflow-hidden flex flex-col h-full hover:border-cyan-500/40 transition duration-300">
                         <div class="h-36 bg-[#0a0f18] border-b border-slate-800/60 p-3 font-mono text-[10px] text-slate-600 overflow-hidden select-none">
                             // Automated Order Capture<br>
@@ -181,12 +205,16 @@
                 </div>
             </div>
 
+            <!-- SECTION CONTACT MODIFIÉE AVEC TES COORDONNÉES -->
             <div id="contact" class="text-center py-8 space-y-4">
                 <h3 class="text-xl font-bold text-white">Un projet en tête ?</h3>
-                <p class="text-xs text-slate-400 max-w-sm mx-auto">Relevez tous vos défis technologiques, discutons d'un projet en tête !</p>
-                <div class="pt-2">
-                    <a href="mailto:email@i-dea.im" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-[#0f1622] font-extrabold text-sm py-2.5 px-8 rounded-lg shadow-lg shadow-cyan-500/10 transition">
-                        Contact
+                <p class="text-xs text-slate-400 max-w-sm mx-auto">Relevez tous vos défis technologiques, discutons de votre projet dès maintenant !</p>
+                <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:igloire243@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center bg-cyan-500 hover:bg-cyan-600 text-[#0f1622] font-extrabold text-sm py-2.5 px-8 rounded-lg shadow-lg shadow-cyan-500/10 transition gap-2">
+                        <i class="fas fa-envelope"></i> Par Email
+                    </a>
+                    <a href="https://wa.me/243981740414?text=Bonjour%20Gloire,%20j'ai%20vu%20ton%20portfolio%20et%20j'aimerais%20discuter%20d'un%20projet." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20ba56] text-[#0f1622] font-extrabold text-sm py-2.5 px-8 rounded-lg shadow-lg shadow-emerald-500/10 transition gap-2">
+                        <i class="fab fa-whatsapp text-base"></i> Discuter sur WhatsApp
                     </a>
                 </div>
             </div>
@@ -194,6 +222,7 @@
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-[#0b1019] border-t border-slate-900/60 pt-14 pb-8 mt-20">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-400">
             <div class="space-y-3">
@@ -204,22 +233,27 @@
             </div>
             <div class="space-y-2 md:pl-12">
                 <div class="text-white font-semibold tracking-wider text-xs uppercase mb-3">Menu</div>
+                <div><a href="#accueil" class="hover:text-white text-xs transition">Accueil</a></div>
                 <div><a href="#about" class="hover:text-white text-xs transition">About</a></div>
-                <div><a href="#contact" class="hover:text-white text-xs transition">Contact</a></div>
+                <div><a href="#projets" class="hover:text-white text-xs transition">Projets</a></div>
             </div>
             <div class="space-y-3">
-                <div class="text-white font-semibold tracking-wider text-xs uppercase mb-3">Contact</div>
+                <div class="text-white font-semibold tracking-wider text-xs uppercase mb-3">Mes Réseaux</div>
                 <div class="flex items-center space-x-2 text-xs">
                     <i class="fab fa-github w-4"></i>
                     <a href="https://github.com" target="_blank" class="hover:text-white transition">GitHub</a>
                 </div>
                 <div class="flex items-center space-x-2 text-xs">
                     <i class="fab fa-linkedin w-4 text-cyan-400"></i>
-                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                </div>
+                <div class="flex items-center space-x-2 text-xs text-emerald-400">
+                    <i class="fab fa-whatsapp w-4"></i>
+                    <a href="https://wa.me/243981740414?text=Bonjour%20Gloire,%20j'ai%20vu%20ton%20portfolio%20et%20j'aimerais%20discuter%20d'un%20projet." target="_blank" class="hover:text-white transition">WhatsApp Business</a>
                 </div>
                 <div class="flex items-center space-x-2 text-xs text-cyan-400">
                     <i class="fas fa-envelope w-4"></i>
-                    <a href="mailto:email@i-dea.im" class="hover:underline transition">email@i-dea.im</a>
+                    <a href="mailto:igloire243@gmail.com" class="hover:underline transition">igloire243@gmail.com</a>
                 </div>
             </div>
         </div>
